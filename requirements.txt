@@ -1,6 +1,5 @@
 discord
 asyncio
-discord.ext
 datetime
 os
 random
