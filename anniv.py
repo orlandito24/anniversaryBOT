@@ -15,7 +15,7 @@ bot.remove_command("help")
 @bot.event
 async def on_ready():
     print("We have logged in as {0.user}".format(bot))
-    await bot.get_channel(820240672291291148).send('**~ Look bby, i🐛 did a thing 💞 ~**\n type **!help** for commands!')
+    await bot.get_channel(818021991247511574).send('**~ Look bby, i🐛 did a thing 💞 ~**\n type **!help** for commands!')
 
 # Start command: displays all commands avaliable
 # each needs to begin with !*blank*
@@ -95,6 +95,9 @@ async def kill(ctx):
 
 bot.run(bot_token)
 
+
+
+# change .today() to now()
 # # if our day = 0 its not our aniv, if 1 then our aniv
 # our_day = 0
 # @tasks.loop(count=None,reconnect=True)
