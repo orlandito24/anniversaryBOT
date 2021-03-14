@@ -2,11 +2,9 @@ import discord
 import asyncio
 from discord.ext import commands, tasks
 from datetime import datetime
-import os
-import random
 
 # token of bot
-bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ.m26N8XSVQ259qGivWgHZTAqFtCE'
+bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ.KfKSLEu4cVKpaeFKWNPTifjpQT8'
 
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
@@ -81,20 +79,19 @@ async def next(ctx):
     await ctx.send('*~get hyyppeedd💯, your next anniversary is in...~*')
     await ctx.send('⏱️ ***'+ str(days) + '*** days, ***' + str(hours) + '*** hours, ***' + str(minutes) + '*** minutes, ***' + str(seconds) + '*** seconds ')
 
-# Kill_Bot command: ends the game that is currently gonig onskips the timer for lobby creation
-@bot.command()
-async def kill(ctx):
-    await ctx.send('bye love birds 🐥💖🐥')
-    await ctx.send('i die now ⚰️')
-    await bot.logout()
-
-# UNDER CONSTRUCTION
 @bot.command()
 async def today(ctx):
     if datetime.today().day != 20:
         await ctx.send('**no, its not today** 😢')
     else:
         await ctx.send('**yea it is! YAYAY! don\'t forget to give kithes** 💋')
+
+# Kill_Bot command: ends the game that is currently gonig onskips the timer for lobby creation
+@bot.command()
+async def kill(ctx):
+    await ctx.send('bye love birds 🐥💖🐥')
+    await ctx.send('i die now ⚰️')
+    await bot.logout()
 
 bot.run(bot_token)
 
