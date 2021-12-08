@@ -4,11 +4,7 @@ from discord.ext import commands, tasks
 from datetime import datetime
 
 # token of bot
-<<<<<<< HEAD
 bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ._vQ6n0Vf07Myx0DKoDZ0KCbUAbY'
-=======
-bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ.XfKJDR9Jus8-Wo8v0VwzlDSIWDE'
->>>>>>> 716be42fc8661415cc9579989d2c8b8cf5829ba2
 
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
