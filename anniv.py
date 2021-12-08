@@ -5,6 +5,8 @@ import os
 from discord.ext import commands, tasks
 from datetime import datetime
 
+load_dotenv()
+
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
 bot.remove_command("help")
