@@ -1,5 +1,7 @@
 import discord
 import asyncio
+from dotenv import load_dotenv
+import os
 from discord.ext import commands, tasks
 from datetime import datetime
 
@@ -91,7 +93,7 @@ async def kill(ctx):
     await bot.logout()
 
 #bot token
-bot.run(process.env.token)
+bot.run(os.getenv('token'))
 
 
 
