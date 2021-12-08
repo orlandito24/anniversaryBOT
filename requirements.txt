@@ -1,3 +1,6 @@
 discord
 asyncio
 datetime
+os
+dotenv
+load_dotenv
