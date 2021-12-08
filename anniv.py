@@ -1,11 +1,9 @@
 import discord
 import asyncio
-from dotenv import load_dotenv
-import os
+from boto.s3.connection import S3Connection
 from discord.ext import commands, tasks
 from datetime import datetime
 
-load_dotenv()
 
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
@@ -95,7 +93,7 @@ async def kill(ctx):
     await bot.logout()
 
 #bot token
-bot.run(os.getenv('token'))
+bot.run(os.environ['token'])
 
 
 
