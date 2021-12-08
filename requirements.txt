@@ -1,4 +1,3 @@
 discord
 asyncio
 datetime
-load_dotenv
