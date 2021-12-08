@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 from datetime import datetime
 
 # token of bot
-bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ.KfKSLEu4cVKpaeFKWNPTifjpQT8'
+bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ._vQ6n0Vf07Myx0DKoDZ0KCbUAbY'
 
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
@@ -97,15 +97,3 @@ bot.run(bot_token)
 
 
 
-# change .today() to now()
-# # if our day = 0 its not our aniv, if 1 then our aniv
-# our_day = 0
-# @tasks.loop(count=None,reconnect=True)
-# async def checker():
-#     global our_day
-#     if datetime.today().day == 20:
-#         our_day = 1
-#     else:
-#         our_day = 0
-
-# checker.start()
