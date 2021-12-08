@@ -3,9 +3,6 @@ import asyncio
 from discord.ext import commands, tasks
 from datetime import datetime
 
-# token of bot
-bot_token = 'ODIwMjM4NDMyMjU2MTMxMDcy.YEyQkQ._vQ6n0Vf07Myx0DKoDZ0KCbUAbY'
-
 # client bot thing
 bot = commands.Bot(command_prefix = "!",intents = discord.Intents.all())
 bot.remove_command("help")
@@ -93,7 +90,8 @@ async def kill(ctx):
     await ctx.send('i die now ⚰️')
     await bot.logout()
 
-bot.run(bot_token)
+#bot token
+bot.run(process.env.token)
 
 
 
