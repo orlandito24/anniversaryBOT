@@ -1,6 +1,5 @@
 import discord
 import asyncio
-from boto.s3.connection import S3Connection
 from discord.ext import commands, tasks
 from datetime import datetime
 
